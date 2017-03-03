@@ -1,12 +1,12 @@
 # iOS-ImageEditor
 
-# Create image with text 
+ Create image with text 
 
-# Resized Image
+ Resized Image
 
-# Crop an Image
+ Crop an Image
 
-# Set hue saturation brightness alpha for an image.
+ Set hue saturation brightness alpha for an image.
 
 We can use these classes by adding bridging-header.h file in Swift project
 
