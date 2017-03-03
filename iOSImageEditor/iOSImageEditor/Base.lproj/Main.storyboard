@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vVJ-rw-Gvh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Comics-BG-iphone-4s-wallpaper-ilikewallpaper_com.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hPY-VU-V5c">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="hPY-VU-V5c" firstAttribute="leading" secondItem="vVJ-rw-Gvh" secondAttribute="leading" id="A8F-mT-YI9"/>
+                                    <constraint firstAttribute="trailing" secondItem="hPY-VU-V5c" secondAttribute="trailing" id="KzD-SC-d9q"/>
+                                    <constraint firstAttribute="bottom" secondItem="hPY-VU-V5c" secondAttribute="bottom" id="NZg-HR-tni"/>
+                                    <constraint firstItem="hPY-VU-V5c" firstAttribute="top" secondItem="vVJ-rw-Gvh" secondAttribute="top" id="tKx-Xc-tvh"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vVJ-rw-Gvh" secondAttribute="bottom" id="0XD-A1-2z9"/>
+                            <constraint firstAttribute="trailing" secondItem="vVJ-rw-Gvh" secondAttribute="trailing" id="FBH-8H-7pV"/>
+                            <constraint firstItem="vVJ-rw-Gvh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="LqO-gb-V4H"/>
+                            <constraint firstItem="vVJ-rw-Gvh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qrS-lN-UMD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="view" destination="8bC-Xf-vdC" id="TUl-ed-jr2"/>
+                        <outlet property="vw" destination="vVJ-rw-Gvh" id="Lfn-Ea-ddA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-162.40000000000001" y="89.505247376311857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Comics-BG-iphone-4s-wallpaper-ilikewallpaper_com.jpg" width="640" height="960"/>
+    </resources>
+</document>
