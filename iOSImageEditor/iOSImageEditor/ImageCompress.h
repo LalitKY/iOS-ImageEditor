@@ -13,7 +13,7 @@
 @interface ImageCompress : NSObject
 
 
--(NSString*)createImageWithTextReturnPath:(NSString *)textStr diskFolder : (NSString*)diskFolder backgroundColor:(UIColor*)bgColor textColor:(UIColor*)textColor font:(UIFont*)font;
+-(NSString*)createImageWithTextReturnPath:(NSString *)textStr imageWidth : (CGFloat)width diskFolder : (NSString*)diskFolder backgroundColor:(UIColor*)bgColor textColor:(UIColor*)textColor font:(UIFont*)font;
 
 -(UIImage *)imageResize :(UIImage*)img andResizeTo:(CGSize)newSize;
 

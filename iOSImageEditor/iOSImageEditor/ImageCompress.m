@@ -13,11 +13,11 @@
 
 #pragma mark - Create Image With text
 
--(NSString*)createImageWithTextReturnPath:(NSString *)textStr diskFolder : (NSString*)diskFolder backgroundColor:(UIColor*)bgColor textColor:(UIColor*)textColor font:(UIFont*)font
+-(NSString*)createImageWithTextReturnPath:(NSString *)textStr imageWidth : (CGFloat)width diskFolder : (NSString*)diskFolder backgroundColor:(UIColor*)bgColor textColor:(UIColor*)textColor font:(UIFont*)font
 {
     textStr =[NSString stringWithFormat:@"%@",textStr];
     
-    UIImage *image = [self imageFromString:textStr backgroundColor:bgColor textColor:textColor font:(UIFont*)font];
+    UIImage *image = [self imageFromString:textStr width :width backgroundColor:bgColor textColor:textColor font:(UIFont*)font];
     
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory = [paths objectAtIndex:0];
@@ -52,13 +52,13 @@
     return  pathInDocumentDirectoryStr;
 }
 
-- (UIImage *)imageFromString:(NSString *)string backgroundColor:(UIColor*)bgColor textColor:(UIColor*)textColor font:(UIFont*)font
+- (UIImage *)imageFromString:(NSString *)string width : (CGFloat)width backgroundColor:(UIColor*)bgColor textColor:(UIColor*)textColor font:(UIFont*)font
 {
-    CGFloat height = [self heightForLabel:font width:256 withText:string];
+    CGFloat height = [self heightForLabel:font width:width withText:string];
     
-    UILabel *lbl =[[UILabel alloc] initWithFrame:CGRectMake(0, 0, 256, height)];
+    UILabel *lbl =[[UILabel alloc] initWithFrame:CGRectMake(0, 0, width, height)];
 
-    UIGraphicsBeginImageContextWithOptions(CGSizeMake(256, height), NO, 1);
+    UIGraphicsBeginImageContextWithOptions(CGSizeMake(width, height), NO, 1);
     
     lbl.text =string;
     lbl.backgroundColor =bgColor;

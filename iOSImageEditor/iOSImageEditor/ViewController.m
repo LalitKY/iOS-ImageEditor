@@ -20,9 +20,8 @@
     
     // Create image with Text
     
-    NSString *link = [object createImageWithTextReturnPath:@"i am testing first one." diskFolder:@"images" backgroundColor:[UIColor redColor] textColor:[UIColor blackColor] font:[UIFont systemFontOfSize:20]];
+    NSString *link = [object createImageWithTextReturnPath:@"i am testing first one." imageWidth:256 diskFolder:@"images" backgroundColor:[UIColor redColor] textColor:[UIColor blackColor] font:[UIFont systemFontOfSize:20]];
     
-    NSLog(@"%@",link);
     
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory = [paths objectAtIndex:0];
