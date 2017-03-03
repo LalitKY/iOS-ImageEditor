@@ -1,12 +1,16 @@
-# iOS-ImageEditor
+# iOS-ImageEditor 
 
- Create image with text 
 
- Resized Image
+-- Here we have a project with very helpful features for image editing as mentioned below. --
 
- Crop an Image
+1. Create image with text where we can set different properties to the image.
 
- Set hue saturation brightness alpha for an image.
+2. Resize an image
 
-We can use these classes by adding bridging-header.h file in Swift project
+3. Crop an image
 
+4. Set hue saturation brightness alpha for an image.
+
+5. We can use these classes by adding bridging-header.h file in Swift project
+
+Hope this helps.
